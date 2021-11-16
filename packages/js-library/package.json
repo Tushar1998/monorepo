@@ -1,0 +1,50 @@
+{
+  "name": "@project/js-library",
+  "version": "0.0.1",
+  "description": "Vanilla JS library that can be embeded in html via script tags",
+  "keywords": [
+    "vanilla",
+    "javascript",
+    "library",
+    "lerna"
+  ],
+  "homepage": "https://github.com/Tushar1998/typescript-monorepo/tree/main/packages/js-library#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tushar1998/typescript-monorepo.git"
+  },
+  "license": "ISC",
+  "author": "Tushar Mistry <tushar,mistry@raweng.com>",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development rollup -c rollup.config.js --configPlugin typescript --watch",
+    "build": "cross-env NODE_ENV=production rollup -c rollup.config.js --configPlugin typescript"
+  },
+  "dependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.0",
+    "@babel/runtime": "^7.16.3",
+    "@babel/plugin-transform-runtime": "^7.16.0",
+    "@rollup/plugin-typescript": "^8.3.0",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.0.6",
+    "@rollup/plugin-replace" : "^3.0.0",
+    "@svgr/rollup": "^5.5.0",
+    "cross-env": "^7.0.3",
+    "lodash": "^4.17.21",
+    "rollup": "2.59.0",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-sourcemaps": "^0.6.3",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-delete": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.175",
+    "@types/node": "^16.10.3",
+    "ts-node": "^10.3.0",
+    "typescript": "^4.4.3",
+    "tslib": "^2.3.1"
+  }
+}
