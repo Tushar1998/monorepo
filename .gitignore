@@ -123,3 +123,4 @@ dist
 **/*dist
 **/*build
 .gitconfig
+.devcontainer
