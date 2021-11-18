@@ -49,7 +49,7 @@ export default {
     }),
     prod && terser({ compress: true, output: { comments: false }, mangle: false }),
     replace({
-      'process.env.NODE_ENV': JSON.stringify('production'),
+      'process.env.NODE_ENV': JSON.stringify(prod ? 'production' : dev && 'development'),
     }),
   ].filter(Boolean),
 };
