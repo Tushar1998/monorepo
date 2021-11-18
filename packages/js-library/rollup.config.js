@@ -33,7 +33,7 @@ export default {
       runOnce: true,
     }),
     css({
-      output: 'index.css',
+      output: 'index.min.css',
     }),
     svgr(),
     typescript({ tsconfig: './tsconfig.json' }),

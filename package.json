@@ -11,7 +11,9 @@
     "start": "yarn workspace @project/cra run start",
     "build": "lerna run build",
     "start:react-library": "yarn workspace @project/react-library run start",
-    "build:react-library": "yarn workspace @project/react-library run build"
+    "build:react-library": "yarn workspace @project/react-library run build",
+    "symlink-scripts": "./symlink.sh",
+    "postinstall": "yarn build && yarn symlink-scripts && yarn start"
   },
   "repository": {
     "type": "git",

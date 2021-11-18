@@ -124,3 +124,6 @@ dist
 **/*build
 .gitconfig
 .devcontainer
+**/*.min.js
+**/*.min.css
+
