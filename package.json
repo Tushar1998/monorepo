@@ -8,10 +8,12 @@
     "examples/*"
   ],
   "scripts": {
-    "start": "yarn workspace @project/cra run start",
+    "start": "yarn workspace @tushar1998/cra run start",
     "build": "lerna run build",
-    "start:react-library": "yarn workspace @project/react-library run start",
-    "build:react-library": "yarn workspace @project/react-library run build",
+    "start:react-library": "yarn workspace @tushar1998/react-library run start",
+    "build:react-library": "yarn workspace @tushar1998/react-library run build",
+    "start:js-library": "yarn workspace @tushar1998/js-library run build",
+    "build:js-library": "yarn workspace @tushar1998/js-library run build",
     "symlink-scripts": "./symlink.sh",
     "postinstall": "yarn build && yarn symlink-scripts && yarn start"
   },

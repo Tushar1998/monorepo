@@ -1,5 +1,5 @@
 {
-  "name": "@project/components",
+  "name": "@tushar1998/components",
   "version": "0.0.1",
   "description": "This is package for making components and reviewing them with Storybook",
   "author": "Tushar Mistry <tushar,mistry@raweng.com>",

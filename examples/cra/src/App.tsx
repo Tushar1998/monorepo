@@ -1,6 +1,6 @@
 import React from 'react';
-import { Card } from "@project/react-library"
-import "@project/react-library/lib/index.css"
+import { Card } from "@tushar1998/react-library"
+import "@tushar1998/react-library/lib/index.css"
 
 function App() {
   return (

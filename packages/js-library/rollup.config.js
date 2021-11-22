@@ -7,6 +7,7 @@ import commonjs from '@rollup/plugin-commonjs';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import del from 'rollup-plugin-delete';
 import replace from '@rollup/plugin-replace';
+import pkg from './package.json';
 
 const dev = process.env.NODE_ENV === 'development';
 const prod = process.env.NODE_ENV === 'production';
@@ -16,13 +17,13 @@ export default {
   output: [
     {
       format: 'esm',
-      file: './lib/index.esm.min.js',
+      file: pkg.module,
       sourcemap: dev ? 'iniline' : prod && true,
     },
     {
       name: 'myLibrary',
       format: 'umd',
-      file: './lib/index.umd.min.js',
+      file: pkg.main,
       sourcemap: dev ? 'iniline' : prod && true,
       exports: 'named',
     },
@@ -50,6 +51,7 @@ export default {
     prod && terser({ compress: true, output: { comments: false }, mangle: false }),
     replace({
       'process.env.NODE_ENV': JSON.stringify(prod ? 'production' : dev && 'development'),
+      preventAssignment: true,
     }),
   ].filter(Boolean),
 };

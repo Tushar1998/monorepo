@@ -1,9 +1,9 @@
 {
-  "name": "@project/cra",
+  "name": "@tushar1998/cra",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "@project/react-library" : "*",
+    "@tushar1998/react-library" : "*",
     "@testing-library/dom": "8.10.1",
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^11.2.7",
