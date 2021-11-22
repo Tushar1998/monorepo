@@ -11,8 +11,7 @@
     "strict": true,
     "skipLibCheck": true,
     "paths": {
-      "@tushar1998/*": ["packages/*/src"],
-      "@tushar1998/components/*": ["packages/components/src/*"]
+      "@tuski98/*": ["packages/*/src"],
     }
   },
   "include": ["packages/**/*", "examples/**/*"],

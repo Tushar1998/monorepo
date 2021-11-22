@@ -1,6 +1,6 @@
 {
-  "name": "@tushar1998/react-library",
-  "version": "0.0.1",
+  "name": "@tuski98/react-library",
+  "version": "0.0.0",
   "description": "React Library Setup for your React Project",
   "homepage": "https://github.com/Tushar1998/typescript-monorepo/tree/main/packages/react-library#readme",
   "bugs": {
@@ -21,19 +21,20 @@
   "types": "lib/types/index.d.ts",
   "scripts": {
     "start": "cross-env NODE_ENV=development BABEL_ENV=development rollup -c rollup.config.js --watch",
-    "build": "cross-env NODE_ENV=production BABEL_ENV=production rollup -c rollup.config.js"
+    "build": "cross-env NODE_ENV=production BABEL_ENV=production rollup -c rollup.config.js",
+    "publish": "lerna publish"
   },
   "dependencies": {
     "@babel/core": "^7.16.0",
+    "@babel/plugin-transform-runtime": "^7.16.0",
     "@babel/preset-env": "^7.16.0",
     "@babel/preset-react": "^7.16.0",
     "@babel/preset-typescript": "^7.16.0",
     "@babel/runtime": "^7.16.3",
-    "@babel/plugin-transform-runtime": "^7.16.0",
-    "@rollup/plugin-typescript": "^8.3.0",
     "@rollup/plugin-babel": "^5.3.0",
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.0.6",
+    "@rollup/plugin-typescript": "^8.3.0",
     "@svgr/rollup": "^5.5.0",
     "cross-env": "^7.0.3",
     "lodash": "^4.17.21",
@@ -42,10 +43,10 @@
     "react-refresh": "^0.10.0",
     "rollup": "2.59.0",
     "rollup-plugin-css-only": "^3.1.0",
-    "rollup-plugin-sourcemaps": "^0.6.3",
+    "rollup-plugin-delete": "^2.0.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-terser": "^7.0.2",
-    "rollup-plugin-delete": "^2.0.0"
+    "rollup-plugin-sourcemaps": "^0.6.3",
+    "rollup-plugin-terser": "^7.0.2"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.175",
@@ -59,5 +60,6 @@
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
-  }
+  },
+  "gitHead": "4a1c53cbdf59643053b8aa0c3d53e0f017337212"
 }

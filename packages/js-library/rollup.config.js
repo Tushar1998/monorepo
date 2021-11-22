@@ -29,6 +29,7 @@ export default {
     },
   ],
   plugins: [
+    // TODO: Add Banner Plugin for minified files
     del({
       targets: './lib/*',
       runOnce: true,
