@@ -126,4 +126,4 @@ dist
 .devcontainer
 **/*.min.js
 **/*.min.css
-
+/.vscode
