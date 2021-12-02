@@ -1,55 +1,26 @@
 {
   "name": "typescript-monorepo",
-  "version": "1.0.0",
-  "description": "Monorepo of all neccessary starter templates like React",
   "private": true,
-  "workspaces": [
-    "packages/*",
-    "examples/*"
-  ],
   "scripts": {
-    "build": "lerna run build",
-    "start" : "concurrently -p \"[{name}]\" -n \"React,JS,CRA\" -c \"black.bgMagenta,black.bgYellow,black.bgGreen\" \"yarn start:react-library\" \"yarn start:js-library\" \"yarn start:cra\"",
-    "start:cra": "yarn workspace @tushar1998/cra run start",
-    "start:react-library": "yarn workspace @tushar1998/react-library run start",
-    "build:react-library": "yarn workspace @tushar1998/react-library run build",
-    "start:js-library": "yarn workspace @tushar1998/js-library run build",
-    "build:js-library": "yarn workspace @tushar1998/js-library run build",
+    "build": "pnpm recursive run build",
+    "start": "concurrently -p \"[{name}]\" -n \"React,JS,CRA\" -c \"black.bgMagenta,black.bgYellow,black.bgGreen\" \"yarn start:react-library\" \"yarn start:js-library\" \"yarn start:cra\"",
     "symlink-scripts": "./symlink.sh",
-    "bootstrap": "lerna bootstrap && yarn build && yarn symlink-scripts && yarn start",
-    "npm:publish" : "lerna publish"
+    "bootstrap": "pnpm i && yarn build && yarn symlink-scripts && yarn start",
+    "npm:publish": "pnpm publish"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Tushar1998/typescript-monorepo.git"
-  },
-  "keywords": [
-    "typecript",
-    "starter-repositories",
-    "boilerplates",
-    "lerna",
-    "yarn-workspaces"
-  ],
-  "author": "Tushar Mistry",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Tushar1998/typescript-monorepo/issues"
-  },
-  "homepage": "https://github.com/Tushar1998/typescript-monorepo#readme",
   "devDependencies": {
     "@types/node": "12.20.36",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
     "@typescript-eslint/parser": "^4.33.0",
-    "concurrently" : "^6.4.0",
+    "concurrently": "^6.4.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.26.1",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "lerna": "^4.0.0",
     "prettier": "^2.4.1",
-    "typescript": "^4.4.4",
-    "ts-node": "^10.4.0"
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
   }
 }

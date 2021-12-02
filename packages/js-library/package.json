@@ -23,7 +23,6 @@
   ],
   "scripts": {
     "build": "cross-env NODE_ENV=production BABEL_ENV=production rollup -c rollup.config.js",
-    "publish": "lerna publish",
     "start": "cross-env NODE_ENV=development BABEL_ENV=development rollup -c rollup.config.js --watch"
   },
   "dependencies": {
