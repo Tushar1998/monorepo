@@ -1,14 +1,11 @@
 {
-  "name": "@tuski98/react-library",
+  "name": "@tushar1998/react-library",
   "version": "0.0.1",
   "description": "React Library Setup for your React Project",
   "homepage": "https://github.com/Tushar1998/typescript-monorepo/tree/main/packages/react-library#readme",
   "bugs": {
     "url": "https://github.com/Tushar1998/typescript-monorepo/issues"
   },
-  "files": [
-    "lib"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Tushar1998/typescript-monorepo.git"
@@ -19,10 +16,13 @@
   "module": "lib/index.ems.js",
   "browser": "lib/index.umd.js",
   "types": "lib/types/index.d.ts",
+  "files": [
+    "lib"
+  ],
   "scripts": {
-    "start": "cross-env NODE_ENV=development BABEL_ENV=development rollup -c rollup.config.js --watch",
     "build": "cross-env NODE_ENV=production BABEL_ENV=production rollup -c rollup.config.js",
-    "publish": "lerna publish"
+    "publish": "lerna publish",
+    "start": "cross-env NODE_ENV=development BABEL_ENV=development rollup -c rollup.config.js --watch"
   },
   "dependencies": {
     "@babel/core": "^7.16.0",

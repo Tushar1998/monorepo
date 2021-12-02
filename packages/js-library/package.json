@@ -1,5 +1,5 @@
 {
-  "name": "@tuski98/js-library",
+  "name": "@tushar1998/js-library",
   "version": "0.0.1",
   "description": "Vanilla JS library that can be embeded in html via script tags",
   "keywords": [
@@ -8,12 +8,6 @@
     "library",
     "lerna"
   ],
-  "main": "lib/index.umd.min.js",
-  "module": "lib/index.esm.min.js",
-  "types": "lib/types/index.d.ts",
-  "files": [
-    "lib"
-  ],
   "homepage": "https://github.com/Tushar1998/typescript-monorepo/tree/main/packages/js-library#readme",
   "repository": {
     "type": "git",
@@ -21,10 +15,16 @@
   },
   "license": "ISC",
   "author": "Tushar Mistry <tushar,mistry@raweng.com>",
+  "main": "lib/index.umd.min.js",
+  "module": "lib/index.esm.min.js",
+  "types": "lib/types/index.d.ts",
+  "files": [
+    "lib"
+  ],
   "scripts": {
-    "start": "cross-env NODE_ENV=development BABEL_ENV=development rollup -c rollup.config.js --watch",
     "build": "cross-env NODE_ENV=production BABEL_ENV=production rollup -c rollup.config.js",
-    "publish": "lerna publish"
+    "publish": "lerna publish",
+    "start": "cross-env NODE_ENV=development BABEL_ENV=development rollup -c rollup.config.js --watch"
   },
   "dependencies": {
     "@babel/core": "^7.16.0",
@@ -44,8 +44,7 @@
     "rollup-plugin-css-only": "^3.1.0",
     "rollup-plugin-delete": "^2.0.0",
     "rollup-plugin-sourcemaps": "^0.6.3",
-    "rollup-plugin-terser": "^7.0.2",
-    "rollup-plugin-typescript2": "^0.31.0"
+    "rollup-plugin-terser": "^7.0.2"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.175",

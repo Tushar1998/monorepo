@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "ESNext",
     "jsx": "react",
     "module": "commonjs",
     "baseUrl": ".",
+    "emitDeclarationOnly": true,
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
@@ -11,7 +12,7 @@
     "strict": true,
     "skipLibCheck": true,
     "paths": {
-      "@tuski98/*": ["packages/*/src"],
+      "@tushar1998/*": ["packages/*/src"],
     }
   },
   "include": ["packages/**/*", "examples/**/*"],

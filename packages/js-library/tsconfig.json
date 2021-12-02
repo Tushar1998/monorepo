@@ -1,10 +1,8 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "emitDeclarationOnly": true,
     "outDir": "./types",
     "rootDir": "./src",
-    "sourceMap": true
   },
   "include": ["./src/**/*", "./src/index.d.ts"]
 }
