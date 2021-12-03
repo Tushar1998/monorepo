@@ -12,7 +12,7 @@
     "strict": true,
     "skipLibCheck": true,
     "paths": {
-      "@tushar1998/*": ["packages/*/src"],
+      "@tushar6698/*": ["packages/*/src"],
     }
   },
   "include": ["packages/**/*", "examples/**/*"],

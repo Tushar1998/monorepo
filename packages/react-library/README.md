@@ -6,8 +6,8 @@
 
 ```js
 import React from 'react';
-import { Card } from '@tushar1998/react-library';
-import "@tushar1998/react-library/lib/index.css"
+import { Card } from '@tushar6698/react-library';
+import "@tushar6698/react-library/lib/index.css"
 
 
 export default function Example() {

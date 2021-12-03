@@ -1,6 +1,6 @@
 {
-  "name": "@tushar1998/js-library",
-  "version": "0.0.1",
+  "name": "@tushar6698/js-library",
+  "version": "0.0.4",
   "description": "Vanilla JS library that can be embeded in html via script tags",
   "keywords": [
     "vanilla",
@@ -39,6 +39,8 @@
     "@svgr/rollup": "^5.5.0",
     "cross-env": "^7.0.3",
     "lodash": "^4.17.21",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "rollup": "2.59.0",
     "rollup-plugin-css-only": "^3.1.0",
     "rollup-plugin-delete": "^2.0.0",
@@ -48,6 +50,8 @@
   "devDependencies": {
     "@types/lodash": "^4.14.175",
     "@types/node": "^16.10.3",
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
     "ts-node": "^10.3.0",
     "tslib": "^2.3.1",
     "typescript": "^4.4.3"

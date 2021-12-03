@@ -27,3 +27,6 @@ $ npm i -g pnpm
 ### Examples
  - Create React App 
  Full Example [here](examples/cra)
+
+ TODO - check independent versioning 
+      - try publishing package 
