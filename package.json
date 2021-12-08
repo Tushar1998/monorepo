@@ -2,11 +2,11 @@
   "name": "typescript-monorepo",
   "private": true,
   "scripts": {
-    "build": "pnpm recursive run build",
-    "start": "concurrently -p \"[{name}]\" -n \"React,JS,CRA\" -c \"black.bgMagenta,black.bgYellow,black.bgGreen\" \"pnpm start --filter=@tushar1998/react-library\" \"pnpm start --filter=@tushar1998/js-library\" \"pnpm start --filter=@tushar1998/cra\"",
-    "symlink-scripts": "./symlink.sh",
     "bootstrap": "pnpm i && yarn build && yarn symlink-scripts && yarn start",
-    "npm:publish": "pnpm publish"
+    "build": "pnpm recursive run build",
+    "npm:publish": "pnpm publish",
+    "start": "concurrently -p \"[{name}]\" -n \"React,JS,CRA\" -c \"black.bgMagenta,black.bgYellow,black.bgGreen\" \"pnpm start --filter=@tushar1998/react-library\" \"pnpm start --filter=@tushar1998/js-library\" \"pnpm start --filter=@tushar1998/cra\"",
+    "symlink-scripts": "./symlink.sh"
   },
   "devDependencies": {
     "@types/node": "12.20.36",
