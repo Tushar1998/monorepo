@@ -1,6 +1,6 @@
 {
-  "name": "@tushar1998/js-library",
-  "version": "0.0.1",
+  "name": "@tushar6698/js-library",
+  "version": "0.0.4",
   "description": "Vanilla JS library that can be embeded in html via script tags",
   "keywords": [
     "vanilla",

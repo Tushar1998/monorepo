@@ -22,7 +22,7 @@ export default function Card({ name }: ICard) {
     <div className="card">
       <p className="title">{isEmpty(name) ? "Value Empty" : name}</p>
       <p className="title">{!isEmpty(name) ? "Value Empty" : name}</p>
-      <p>Count -- {count}</p>
+      <p>Count: {count}</p>
       <button onClick={increment}>Increment</button>
       <button onClick={decrement}>Decrement</button>
     </div>
