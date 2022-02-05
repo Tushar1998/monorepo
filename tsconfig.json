@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "ESNext",
     "jsx": "react",
-    "module": "commonjs",
+    "module": "ESNext",
     "baseUrl": ".",
     "emitDeclarationOnly": true,
     "declaration": true,

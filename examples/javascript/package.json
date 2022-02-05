@@ -1,0 +1,15 @@
+{
+  "name": "@tushar1998/javascript",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "dev": "serve -s . -p 3001"
+  },
+  "author": "Tushar Mistry",
+  "license": "ISC",
+  "dependencies": {
+    "@tushar1998/js-library": "^0.0.1",
+    "serve": "^13.0.2"
+  }
+}
